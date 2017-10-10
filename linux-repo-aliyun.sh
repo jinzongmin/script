@@ -39,8 +39,7 @@ if $SUCCESS ; then
     echo "刷新缓存 ..."
     yum clean all
 	yum makecache
-	echo "\n"
-	echo "**** Repo更新完毕 ***\n"
+	echo -e "\n**** Repo更新完毕 ***\n"
 else
-	echo "所有变更已回滚"
+	echo "\n**** 所有变更已回滚  ***\n"
 fi
